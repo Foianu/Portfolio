@@ -1,0 +1,376 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+    background-color: #fff;
+}
+
+.background {
+    position: relative;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    background: url("../img/interior_living_1.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.content {
+    color: #fff;
+}
+
+.title img {
+    margin-top: 26em;
+    margin-bottom: 1em;
+}
+
+.title h1 {
+    margin-top: 0.2em;
+    margin-bottom: 0.2em;
+    font-size: 48px;
+}
+
+.about-btn {
+    margin-top: 20em;
+}
+
+.about {
+    width: 90%;
+    max-width: 1440px;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: stretch;
+    color: #111;
+    padding: 4em 0 4em 0;
+}
+
+.about-year {
+    width: 90%;
+    max-width: 1440px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;    
+    font-size: 40px;
+    padding: 1em 0 1em 0;
+}
+
+.about-year h1 {
+    -webkit-text-fill-color: #fff;
+    -webkit-text-stroke-width: 1.2px;
+    -webkit-text-stroke-color: #111;
+}
+
+.divider {
+    width: 90%;
+    max-width: 1440px;
+    margin: 0 auto;
+    background: #111;
+    height: 1px;
+}
+
+.about-text {
+    width: 90%;
+    max-width: 1440px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between; 
+    font-size: 16px;
+}
+
+.text-1 div {
+    background: #111;  
+    height: 2px;
+    margin-bottom: 0.5em;
+}
+
+.text-2 div { 
+    background: #111;  
+    height: 2px;
+    margin-bottom: 0.5em;
+}
+
+.text-3 div {
+    background: #111;  
+    height: 2px;
+    margin-bottom: 0.5em;
+}
+
+.text-4 div {
+    background: #111;  
+    height: 2px;
+    margin-bottom: 0.5em;
+}
+
+.experience {
+    width: 90%;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 4em 0 1em 0;
+}
+
+.experience-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.image-container {
+    height: 650px;
+    display: flex;
+    flex-grow: 1;
+
+    background: url("../img/photo-profile.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    align-items: flex-end;
+}
+
+.icons {
+    background: #fff;
+    height: 120px;
+    flex-grow: 1;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding: 0 1em 0 1em;
+    gap: 2em;
+    border: #111 1px solid;
+}
+
+#git-hub_svg:hover #git-hub {
+    fill: #fff;
+    stroke: #111;
+}
+
+#webflow_svg:hover #webflow {
+    fill: #fff;
+    stroke: #111;
+}
+
+#behance_svg:hover #behance_b, 
+#behance_svg:hover #behance_e,
+#behance_svg:hover #behance_line {
+    fill: #fff;
+    stroke: #111;
+}
+
+#linkedin_svg:hover #linkedin_i, 
+#linkedin_svg:hover #linkedin_dot, 
+#linkedin_svg:hover #linkedin_n, .icons a img {
+    fill: #fff;
+    stroke: #111;
+}
+
+.description {
+    flex-grow: 2;
+    flex-basis: 500px;
+
+    text-align: right;
+}
+
+.name {
+    font-size: 40px;
+    font-weight: bold;
+    margin: 0 0 1.8em 0;
+}
+
+.description .title {
+    font-size: 32px;
+    margin: 0.5em 0 1em 0;
+    font-weight: bold;
+}
+
+.position {
+    margin: 0 0 0.5em 0;
+    font-weight: bold;
+}
+
+.field {
+    margin: 4em 0 1em 0;
+    font-weight: bold;
+}
+
+.field-2 {
+    margin: 2em 0 1em 0;
+    font-weight: bold;
+}
+
+.italic {
+    font-style: italic;
+    font-size: 14px;
+}
+
+.description p {
+    line-height: 1.5em;
+}
+
+.button {  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #fff;
+    color: #111;
+    border: 1px solid #111;
+    font-size: 48px;
+
+    text-decoration: none;
+    transition: 0.4s;
+    cursor: pointer;
+    padding: 10em;
+}
+
+.button:hover {
+    background-color: #111;
+    color: #fff;
+    border: 1px solid #fff;
+}
+
+
+
+/*projects*/
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.photo {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding: 1px;
+    flex: 1 1 500px;
+}
+
+.image {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+
+    opacity: 1;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+
+.overlay {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.photo:hover .image {
+    opacity: 0.2;
+    filter: grayscale(100%);
+    transform: scale(0.8);
+    border-radius: 10em;
+    transform: scale(0.7);
+
+}
+
+.photo:hover .overlay {
+    opacity: 1;
+}
+
+.text {
+    color: #111;
+    font-size: 200px;
+    font-weight: bold;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    background-color: rgba(0, 0, 0, 0);
+    cursor: pointer;
+    text-align: center;
+    transform: scale(0.8);
+}
+
+
+
+/*
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 10em 0 10em 0;
+}
+
+.gallery > div > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    padding: 4px;
+}
+
+.gallery > .normal {
+    flex: 1 1 250px; 
+}
+
+.gallery > .big {
+    flex: 1 1 650px;
+
+}
+
+.gallery > .normal:hover {
+    cursor: pointer;
+    transition: 0.3s;
+    transform: scale(1.1);
+}
+
+.gallery > .big:hover {
+    cursor: pointer;
+    transition: 0.3s;
+    transform: scale(1.1);
+}
+
+projects-2
+.gallery-2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 10em 0 10em 0;
+}
+
+.gallery-2 > div > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    padding: 4px;
+}
+
+.gallery-2 > .normal {
+    flex: 1 1 550px; 
+}
+
+.gallery-2 > .normal:hover {
+    cursor: pointer;
+    transition: 0.3s;
+    transform: scale(1.1);
+}
+
+*/
+
+
+
+
+
+
+
+
+
+/*footer*/
+footer p {
+    padding: 1em;
+    text-align: center;
+    font-size: 10px;
+}
