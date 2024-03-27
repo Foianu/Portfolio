@@ -11,79 +11,91 @@
     </head>
     
     <body>
+        <header>
+            <div class="background"> 
+                <div class="content">
+                    <button class="home-btn"><a href="../index.html">Home</a></button>
+                </div>  
+            </div>
+        </header>
+
         <section class="projects">
             <div class="gallery">
 
-                <div class="photo">
-                    <img src="../img/Knaives Factory.svg" alt="Knives" class="image" width="100%">
+                <div class="photo" onclick="photoClicked(this)">
+                    <img src="../img/Knaives Factory1.svg" alt="Knives" class="image" width="100%">
                     <div class="overlay">
-                        <button class="btn">UI</button>
+                        <h1 class="text">UI</h1>
                     </div>    
                 </div>
 
-                <div class="photo">
+                <div class="photo" onclick="photoClicked(this)">
                     <img src="../img/Circuits.svg" alt="PCB" class="image" width="100%">
                     <div class="overlay">
-                        <button class="btn">UI</button>
+                        <h1 class="text">UI</h1>
                     </div>  
                 </div>
 
-                <div class="photo">
+                <div class="photo" onclick="photoClicked(this)">
                     <img src="../img/Matte.svg" alt="Matte" class="image" width="100%">
                     <div class="overlay">
-                        <button class="btn">UI</button>
+                        <h1 class="text">UI</h1>
                     </div>  
                 </div>
 
-                <div class="photo">
+                <div class="photo" onclick="photoClicked(this)">
                     <img src="../img/Archi Structure.svg" alt="Arch" class="image" width="100%">
                     <div class="overlay">
-                        <button class="btn">UI</button>
+                        <h1 class="text">UI</h1>
                     </div>  
                 </div>
 
-                <div class="photo">
+                <div class="photo" onclick="photoClicked(this)">
                     <img src="../img/Space Concept.svg" alt="Space Concept" class="image" width="100%">
                     <div class="overlay">
-                        <button class="btn">UI</button>
+                        <h1 class="text">UI</h1>
                     </div>  
                 </div>
 
-                <div class="photo">
+                <div class="photo" onclick="photoClicked(this)">
                     <img src="../img/Vinyl Hour.svg" alt="Vinyl" class="image" width="100%">
                     <div class="overlay">
-                        <button class="btn">UI</button>
+                        <h1 class="text">UI</h1>
                     </div>  
                 </div>
                 
-                <div class="photo">
+                <div class="photo" onclick="photoClicked(this)">
                     <img src="../img/Color Ring.svg" alt="Coloring" class="image" width="100%">
                     <div class="overlay">
-                        <button class="btn">UI</button>
+                        <h1 class="text">UI</h1>
                     </div>  
                 </div>
                                 
-                <div class="photo">
+                <div class="photo" onclick="photoClicked(this)">
                     <img src="../img/Ayas.svg" alt="Coffee Lounge" class="image" width="100%">
                     <div class="overlay">
-                        <button class="btn">UI</button>
+                        <h1 class="text">UI</h1>
                     </div>  
                 </div>
 
-                <div class="photo">
+                <div class="photo" onclick="photoClicked(this)">
                     <img src="../img/Builder.svg" alt="Builder" class="image" width="100%">
                     <div class="overlay">
-                        <button class="btn">UX</button>
+                        <h1 class="text">UX</h1>
                     </div>  
                 </div>
             </div>
-
-
         </section>
+
+        <div id="popup-overlay" onclick="hidePopup()"></div>
+        <div id="popup" onclick="hidePopup()">
+            <img src="" width="100%" height="100%">
+        
+        </div>
 
         <footer>
             <div>
-                <p>© VAL'N'TINA 2024</p>
+                <p>© Valentina Foianu 2024</p>
             </div>
         </footer> 
 
