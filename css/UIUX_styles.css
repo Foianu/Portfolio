@@ -31,27 +31,23 @@ body {
     position: fixed;
     display: flex;
     justify-content: space-between;
-    background-color: #111;
+    background: #111;
+    color: #fff;
     padding: 0.6em 2em 0.6em 2em;
     font-size: 12px;
     text-align: center;
     outline: none;
     border: none;
     border-radius: 10px;
-    cursor: pointer;
     margin-top: 1em;
     margin-left: 4em;
+    cursor: pointer;
 }
 
 .home-btn:hover {
-    color: #111;
-    background-color: #111;
-    opacity: 0.6;
-}
-
-.home-btn a {
+    background: #111;
     color: #fff;
-    text-decoration: none;
+    opacity: 0.6;
 }
 
 
