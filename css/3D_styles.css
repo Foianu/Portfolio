@@ -24,30 +24,6 @@ body {
     color: #fff;
 }
 
-.home-btn {
-    position: fixed;
-    display: flex;
-    justify-content: space-between;
-    background: #111;
-    color: #fff;
-    padding: 0.6em 2em 0.6em 2em;
-    font-size: 12px;
-    text-align: center;
-    outline: none;
-    border: none;
-    border-radius: 10px;
-    margin-top: 1em;
-    margin-left: 4em;
-    cursor: pointer;
-}
-
-.home-btn:hover {
-    background: #111;
-    color: #fff;
-    opacity: 0.6;
-}
-
-
 .title img {
     margin-top: 26em;
     margin-bottom: 0.8em;
@@ -62,6 +38,34 @@ body {
 .about-btn {
     margin-top: 20em;
 }
+
+.voxel .background {
+    position: relative;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    background: url("../img/Cabana Jam_1.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    margin-top: 4em;
+    margin-bottom: 0.2em;
+}
+
+.voxel .content {
+    color: #fff;
+}
+
+.voxel .title h1 {
+    font-size: 48px;
+    padding: 10em 0 0 0;
+}
+
+.voxel .title p {
+    padding: 0 0 32em 0;
+}
+
+/* main */
 
 .about {
     width: 90%;
@@ -310,6 +314,31 @@ body {
     font-size: 100px;
     cursor: pointer;
     text-align: center;
+}
+
+
+/* home-btn */
+.home-btn {
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    background: #111;
+    color: #fff;
+    padding: 0.6em 2em 0.6em 2em;
+    font-size: 12px;
+    text-align: center;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    margin-top: 1em;
+    margin-left: 4em;
+    cursor: pointer;
+}
+
+.home-btn:hover {
+    background: #111;
+    color: #fff;
+    opacity: 0.6;
 }
 
 /* pop-up */
