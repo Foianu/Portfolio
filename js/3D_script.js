@@ -1,8 +1,16 @@
-function photoClicked(photo) {
-
+function photoClicked(photo, orientation) {
    const popupDiv = document.querySelector("#popup")
    const popupOverlayDiv = document.querySelector("#popup-overlay")
 
+   if (orientation === "portrait") {
+      popupDiv.style.width = "40%"
+      popupDiv.style.height = "90%"
+   }
+   else {
+      popupDiv.style.width = "80%"
+      popupDiv.style.height = "90%"
+   }
+   
    popupDiv.style.display = "flex"
    popupOverlayDiv.style.display = "flex"
 
@@ -10,7 +18,6 @@ function photoClicked(photo) {
    const popupImage = document.querySelector("#popup img")
 
    popupImage.src = clickedImage.src
-
 }
 
 function hidePopup() {
