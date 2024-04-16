@@ -61,7 +61,7 @@ body {
 /* toggle */
 
 .toggle {
-    margin: 4em 0 0 0;
+    margin: 2em 0 2em 0;
     padding: 1em;
     border: #111 1px solid;
 }
@@ -73,10 +73,24 @@ body {
 
 .images {
     margin: 4em;
-
-
 }
 
+.wireframes, .prototype {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.figma-prototype {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    border: 1px solid rgba(0, 0, 0, 0.1)
+}
+
+.figma-prototype img h1 {
+    font-size: 18px;
+    font-weight: bold;
+}
 
 /* scrollbar */
 
