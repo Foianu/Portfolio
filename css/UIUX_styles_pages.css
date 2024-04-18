@@ -75,9 +75,7 @@ body {
     margin: 4em;
 }
 
-
-
-.figma-prototype, .figma-prototype3 {
+.figma-prototype, .figma-prototype3, .figma-prototype4 {
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
@@ -87,6 +85,32 @@ body {
 .figma-prototype img h1 {
     font-size: 18px;
     font-weight: bold;
+}
+
+.renders-btn {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+
+    background: #111;
+    color: #fff;
+    border-radius: 10px;
+    font-size: 18px;
+    border: none;
+    padding: 1em;
+    cursor: pointer;
+    margin: 4em 0 0 0;
+}
+
+.renders-btn a {
+    color: #111;
+    text-decoration: none;
+}
+
+.renders-btn:hover {
+    background: #111;
+    color: #fff;
+    opacity: 0.6;
 }
 
 /* scrollbar */
