@@ -4,11 +4,11 @@ function photoClicked(photo, orientation) {
 
    if (orientation === "portrait") {
       popupDiv.style.width = "40%"
-
+      popupDiv.style.height = "60%"
    }
    else {
       popupDiv.style.width = "80%"
-
+      popupDiv.style.height = "60%"
    }
    
    popupDiv.style.display = "flex"
