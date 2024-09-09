@@ -7,32 +7,47 @@
 
 body {
     background-color: #111;
+    margin: 0 auto;
 }
 
 .buttons {
-    position: relative;
+    margin: 1rem;
+    padding: 2rem 2rem;
+    text-align: center;
     display: flex;
-    justify-content: center;
-    flex-direction: row;
     align-items: center;
-    height: 900px;
-    gap: 1em;
-}
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 3rem;
 
-.btn { 
-    width: 200px;
-    background: #fff;
-    color: #111;
-    border-radius: 10px;
-    font-size: 40px;
-    border: none;
-    padding: 1em;
-    cursor: pointer;
-}
+  }
 
 .buttons a {
     color: #fff;
     text-decoration: none;
+}
+  
+  .btn-left {
+    border: 1px solid #fff;
+    padding: 14rem 1rem;
+    flex-grow: 1;
+  }
+
+  .btn-right {
+    border: 1px solid #fff;
+    padding: 14rem 1rem;
+    flex-grow: 1;
+  }
+
+
+  .btn { 
+    background: #fff;
+    color: #111;
+    border: none;
+    padding: 1em;
+    cursor: pointer;
+    font-size: clamp(8rem, 6rem + 6vw, 5rem);
+
 }
 
 .btn:hover {
@@ -40,4 +55,3 @@ body {
     border: 1px solid #fff;
     color: #fff;
 }
-
