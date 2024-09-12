@@ -274,7 +274,6 @@ body {
     height: 100%;
     padding: 0 1px 0 1px;
     flex: 1 1 500px;
-    object-fit: contain;
 }
 
 .image {
